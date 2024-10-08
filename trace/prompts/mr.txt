@@ -1,0 +1,1 @@
+Localize the visual content described by the given textual query '{}' in the video, and output the start and end timestamps in seconds.

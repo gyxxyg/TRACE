@@ -1,0 +1,1 @@
+Examine the video and locate a number of events, stating their commencement and completion timestamps and a succinct explanation.

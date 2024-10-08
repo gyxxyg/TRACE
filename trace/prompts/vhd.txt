@@ -1,0 +1,1 @@
+Please find the highlight contents in the video described by a sentence query, determining the highlight timestamps and its saliency score on a scale from 1 to 5. Now I will give you the sentence query: '{}'. Please return the query-based highlight timestamps and salient scores.
