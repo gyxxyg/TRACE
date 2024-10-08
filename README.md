@@ -13,6 +13,12 @@
 ## News
 - 10/10/2024, 🔥 Our model checkpoints and inference code are released!
 
+TODO
+- [x] Release the model checkpoints
+- [x] Release the inference and evaluation code
+- [] Release the training and fine-tuning code
+- [] Release the training data
+
 ## Overview
 
 In this work
@@ -33,9 +39,12 @@ We use NPU environments for training and fine-tuning, and use V100 GPUs for eval
 
 | Checkpoints | Description | URL |
 | ----------- | ----------- | ----------- |
-| Initialization      | Weights initialized from VideoLLaMA2 |  |
-| Stage-1      | Model checkpoints trained after stage-1 |  |
-| Stage-2   | Model checkpoints trained after stage-2 |  |
+| Initialization      | Weights initialized from VideoLLaMA2 | [trace-init](https://huggingface.co/Yongxin-Guo/trace-init) |
+| Stage-1      | Model checkpoints trained after stage-1 | [trace-stage1](https://huggingface.co/Yongxin-Guo/trace-stage1) |
+| Stage-2   | Model checkpoints trained after stage-2 | [trace](https://huggingface.co/Yongxin-Guo/trace) |
+| FT-Charades      | Fine-tuned on Charades-STA dataset | [trace-ft-charades](https://huggingface.co/Yongxin-Guo/trace-ft-charades) |
+| FT-Youcook2      | Fine-tuned on Youcook2 dataset | [trace-ft-youcook2](https://huggingface.co/Yongxin-Guo/trace-ft-youcook2) |
+| FT-QVHighlights   | Fine-tuned on QVHighlights dataset | [trace-ft-qvhighlights](https://huggingface.co/Yongxin-Guo/trace-ft-qvhighlights) |
 
 ## Inference and Evaluation
 
