@@ -16,8 +16,9 @@
 TODO
 - [x] Release the model checkpoints
 - [x] Release the inference and evaluation code
-- [] Release the training and fine-tuning code
-- [] Release the training data
+- [x] Release the training and fine-tuning code
+- [ ] Release the training data
+- [ ] Release the TRACE-Retrieval, which outputs timestamps of input frames instead of predict unseen timestamps.
 
 ## Overview
 
@@ -51,6 +52,28 @@ We use NPU environments for training and fine-tuning, and use V100 GPUs for eval
 Please make sure the model and video paths are correct before running the code.
 - Inference codes are provided in [inference.py](./scripts/inference/inference.py).
 - Evaluation codes are provided in [eval.sh](./trace/eval/eval.sh)
+
+## Training
+
+Stage 1 training
+
+```
+bash TRACE/scripts/train/pretrain-128.sh
+```
+
+Stage 2 training
+
+```
+bash TRACE/scripts/train/sft-128.sh
+```
+
+Fine-tune on downsteam task
+
+```
+bash TRACE/scripts/train/sft-youcook2.sh
+```
+
+Please config the data and model paths before running the scrips.
 
 #### Results
 

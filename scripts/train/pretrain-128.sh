@@ -17,7 +17,6 @@ echo $LOCAL_BATCH_SIZE
 export TRANSFORMERS_OFFLINE=1
 export WANDB_PROJECT=trace_vllava
 export NCCL_P2P_LEVEL=NVL
-export HCCL_BUFFSIZE=1024
 RUN_NAME=trace_vllava
 DATA_DIR=datasets
 OUTP_DIR=yourpath/
@@ -35,39 +34,37 @@ ASCEND_LAUNCH_BLOCKING=1 torchrun --nnodes $WORLD_SIZE \
     --freeze_mm_mlp_adapter False \
     --tune_mm_mlp_adapter True \
     --tune_mm_embed_head True \
-    --tune_lm_embed_head True \
-    --model_name_or_path yourpath/trace_vllava/stage1_v4_128 \
-    --data_path yourpath/data/VTG-MD-IT/vtg-it/stage-2-v5-shorten.json \
+    --tune_lm_embed_head False \
+    --model_name_or_path model/trace-init/ \
+    --data_path yourpath/data/VTG-MD-IT/vtg-it/stage-1.json \
     --data_folder data/ \
     --mm_vision_select_layer -2 \
     --mm_use_im_start_end False \
     --mm_use_im_patch_token False \
     --downsample_num 1 \
     --image_aspect_ratio pad \
-    --freeze_backbone False \
+    --freeze_backbone True \
     --num_frames 128 \
     --bf16 True \
     --tf32 False \
     --fp16 False \
-    --output_dir ${OUTP_DIR}/${WANDB_PROJECT}/sft_v3_128_v4_sep_final_v5 \
-    --num_train_epochs 2 \
+    --output_dir ${OUTP_DIR}/${WANDB_PROJECT}/stage1_128 \
+    --num_train_epochs 1 \
     --per_device_train_batch_size $LOCAL_BATCH_SIZE \
     --per_device_eval_batch_size 4 \
     --gradient_accumulation_steps $GRADIENT_ACCUMULATION_STEPS \
     --evaluation_strategy "no" \
     --save_strategy "steps" \
-    --save_steps 5000 \
+    --save_steps 2000 \
     --save_total_limit 99 \
-    --learning_rate 5e-6 \
+    --learning_rate 1e-3 \
     --weight_decay 0. \
     --warmup_ratio 0.03 \
     --lr_scheduler_type "cosine" \
     --logging_steps 1 \
     --model_max_length 4096 \
     --gradient_checkpointing True \
-    --dataloader_num_workers 16 \
+    --dataloader_num_workers 0 \
     --run_name $RUN_NAME \
     --lazy_preprocess True \
-    --sample_scheme "rand" \
-    2> ${OUTP_DIR}/${WANDB_PROJECT}/log_128_sep_final_v5.err
     # --report_to tensorboard \

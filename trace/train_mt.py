@@ -43,6 +43,7 @@ from decord import VideoReader, cpu
 from moviepy.editor import VideoFileClip
 from transformers.models.mixtral.modeling_mixtral import MixtralSparseMoeBlock
 
+sys.path.append('yourpath/projects')
 sys.path.append('yourpath/projects/Trace')
 sys.path.append('yourpath/projects/Trace/trace')
 from Trace.trace import conversation as conversation_lib
@@ -835,6 +836,12 @@ class LazySupervisedDataset(Dataset):
         elif 'video' in self.list_data_dict[i]:
             data_dict['video'] = video
             data_dict['video_timestamps'] = video_timestamps
+            # print('*' * 100)
+            # print(data_dict['video_timestamps'])
+            # print(data_dict['time'])
+            data_dict['time'] = [[min(data_dict['video_timestamps'], key=lambda x: abs(x[0] - target))[0] for target in interval] for interval in data_dict['time']]
+            # print(data_dict['time'])
+            # print('*' * 100)
         elif self.data_args.is_multimodal:
             # image does not exist in the data, but the model is multimodal
             crop_size = self.data_args.image_processor.crop_size

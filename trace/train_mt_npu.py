@@ -1,8 +1,9 @@
 import sys
+sys.path.append('yourpath/projects')
 sys.path.append('yourpath/projects/Trace')
 sys.path.append('yourpath/projects/Trace/trace')
 
-# from Trace.trace.mistral_npu_monkey_patch import (
+# from trace.mistral_npu_monkey_patch import (
 #     replace_with_torch_npu_flash_attention,
 #     replace_with_torch_npu_rmsnorm
 # )

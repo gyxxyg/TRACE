@@ -36,8 +36,8 @@ ASCEND_LAUNCH_BLOCKING=1 torchrun --nnodes $WORLD_SIZE \
     --tune_mm_mlp_adapter True \
     --tune_mm_embed_head True \
     --tune_lm_embed_head True \
-    --model_name_or_path yourpath/trace_vllava/sft_v3_128_v4_sep_final_v5 \
-    --data_path yourpath/data/VTG-MD-IT/moment_retrieval/Charades/mt_fmt.json \
+    --model_name_or_path yourpath/trace \
+    --data_path yourpath/data/Youcook2/mt_fmt.json \
     --data_folder data/ \
     --mm_vision_select_layer -2 \
     --mm_use_im_start_end False \
@@ -49,8 +49,8 @@ ASCEND_LAUNCH_BLOCKING=1 torchrun --nnodes $WORLD_SIZE \
     --bf16 True \
     --tf32 False \
     --fp16 False \
-    --output_dir ${OUTP_DIR}/${WANDB_PROJECT}/sft_v3_128_v4_sep_final_v3_charades \
-    --num_train_epochs 5 \
+    --output_dir ${OUTP_DIR}/${WANDB_PROJECT}/sft_youcook2 \
+    --num_train_epochs 2 \
     --per_device_train_batch_size $LOCAL_BATCH_SIZE \
     --per_device_eval_batch_size 4 \
     --gradient_accumulation_steps $GRADIENT_ACCUMULATION_STEPS \
@@ -69,5 +69,5 @@ ASCEND_LAUNCH_BLOCKING=1 torchrun --nnodes $WORLD_SIZE \
     --run_name $RUN_NAME \
     --lazy_preprocess True \
     --sample_scheme "rand" \
-    2> ${OUTP_DIR}/${WANDB_PROJECT}/log_128_sep_final_v2_charades.err
+    2> ${OUTP_DIR}/${WANDB_PROJECT}/log_128_sep_final_v2_youcook2.err
     # --report_to tensorboard \

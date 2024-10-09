@@ -36,8 +36,8 @@ ASCEND_LAUNCH_BLOCKING=1 torchrun --nnodes $WORLD_SIZE \
     --tune_mm_mlp_adapter True \
     --tune_mm_embed_head True \
     --tune_lm_embed_head True \
-    --model_name_or_path yourpath/trace_vllava/sft_v3_128_v4_sep_final_v5 \
-    --data_path yourpath/data/VTG-MD-IT/dense_video_caption/ActivityNet_Captions/dvc_fmt_mt_ft.json \
+    --model_name_or_path yourpath/trace_vllava/stage1_128 \
+    --data_path yourpath/data/VTG-MD-IT/vtg-it/stage-2.json \
     --data_folder data/ \
     --mm_vision_select_layer -2 \
     --mm_use_im_start_end False \
@@ -49,13 +49,13 @@ ASCEND_LAUNCH_BLOCKING=1 torchrun --nnodes $WORLD_SIZE \
     --bf16 True \
     --tf32 False \
     --fp16 False \
-    --output_dir ${OUTP_DIR}/${WANDB_PROJECT}/sft_v3_128_v4_sep_final_v3_anet_dvc \
-    --num_train_epochs 3 \
+    --output_dir ${OUTP_DIR}/${WANDB_PROJECT}/stage2_128 \
+    --num_train_epochs 2 \
     --per_device_train_batch_size $LOCAL_BATCH_SIZE \
     --per_device_eval_batch_size 4 \
     --gradient_accumulation_steps $GRADIENT_ACCUMULATION_STEPS \
     --evaluation_strategy "no" \
-    --save_strategy "epoch" \
+    --save_strategy "steps" \
     --save_steps 5000 \
     --save_total_limit 99 \
     --learning_rate 5e-6 \
@@ -65,9 +65,8 @@ ASCEND_LAUNCH_BLOCKING=1 torchrun --nnodes $WORLD_SIZE \
     --logging_steps 1 \
     --model_max_length 4096 \
     --gradient_checkpointing True \
-    --dataloader_num_workers 2 \
+    --dataloader_num_workers 16 \
     --run_name $RUN_NAME \
     --lazy_preprocess True \
     --sample_scheme "rand" \
-    2> ${OUTP_DIR}/${WANDB_PROJECT}/log_128_sep_final_v2_anet_dvc.err
     # --report_to tensorboard \
