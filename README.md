@@ -3,20 +3,26 @@
 <h5 align="center"> If our project helps you, please give us a star ⭐ and cite our <a href="#bibliography">paper</a>!</h2>
 <h5 align="center">
 
+[![hf_space](https://img.shields.io/badge/🤗-Paper%20In%20HF-red.svg)](https://huggingface.co/papers/2410.05643)
 [![hf_checkpoint](https://img.shields.io/badge/🤗-Checkpoints-9C276A.svg)](https://huggingface.co/Yongxin-Guo/TRACE)
+[![hf_data](https://img.shields.io/badge/🤗-Datasets-9C276A.svg)](https://huggingface.co/datasets/Yongxin-Guo/TRACE)
 [![arxiv](https://img.shields.io/badge/Arxiv-2410.05643-b31b1b.svg?logo=arXiv)](https://arxiv.org/abs/2410.05643)
 [![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Fgyxxyg%2FTRACE&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=false)](https://hits.seeyoufarm.com)
 
 
 ## News
+
+- 10/10/2024, 🔥 Annotation files of training data are released!
 - 10/10/2024, 🔥 Our model checkpoints and code are released!
 
 TODO
+
 - [x] Release the model checkpoints
 - [x] Release the inference and evaluation code
 - [x] Release the training and fine-tuning code
-- [ ] Release the training data
+- [x] Release the training data
 - [ ] Release the TRACE-Retrieval, which outputs timestamps of input frames instead of predict unseen timestamps.
+- [ ] Train TRACE models on more tasks.
 
 ## Overview
 
