@@ -1,17 +1,15 @@
-<h2 align="center"> <a href="https://arxiv.org/abs/2405.13382">TRACE: Temporal Grounding Video LLM via Casual Event Modeling</a></h2>
+<h2 align="center"> <a href="https://arxiv.org/abs/2410.05643">TRACE: Temporal Grounding Video LLM via Casual Event Modeling</a></h2>
 
 <h5 align="center"> If our project helps you, please give us a star ⭐ and cite our <a href="#bibliography">paper</a>!</h2>
 <h5 align="center">
 
-<!-- [![hf_space](https://img.shields.io/badge/🤗-Paper%20In%20HF-red.svg)](https://huggingface.co/papers/2405.13382) -->
 [![hf_checkpoint](https://img.shields.io/badge/🤗-Checkpoints-9C276A.svg)](https://huggingface.co/Yongxin-Guo/TRACE)
-<!-- [![hf_data](https://img.shields.io/badge/🤗-Datasets-9C276A.svg)](https://huggingface.co/Yongxin-Guo/VTG-LLM) -->
-<!-- [![arxiv](https://img.shields.io/badge/Arxiv-2405.13382-b31b1b.svg?logo=arXiv)](https://arxiv.org/abs/2405.13382) -->
+[![arxiv](https://img.shields.io/badge/Arxiv-2410.05643-b31b1b.svg?logo=arXiv)](https://arxiv.org/abs/2410.05643)
 [![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Fgyxxyg%2FTRACE&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=false)](https://hits.seeyoufarm.com)
 
 
 ## News
-- 10/10/2024, 🔥 Our model checkpoints and inference code are released!
+- 10/10/2024, 🔥 Our model checkpoints and code are released!
 
 TODO
 - [x] Release the model checkpoints
@@ -75,7 +73,7 @@ bash TRACE/scripts/train/sft-youcook2.sh
 
 Please config the data and model paths before running the scrips.
 
-#### Results
+## Results
 
 | Youcook2 (Zero-Shot) | CIDER | METEOR | SODA_c | F1 |
 | --- | --- | --- | --- | --- |
@@ -97,7 +95,7 @@ Please config the data and model paths before running the scrips.
 | --- | --- | --- | --- | --- |
 | TRACE | 53.0 | 37.7 | 24.0 | 39.0 |
 
-#### Demo
+## Demo
 
 <div align="center">
     <img src="assets/trace-demo.png" alt="Demo of TRACE" width="700"/>
@@ -113,3 +111,18 @@ We are grateful for the following awesome projects:
 * [TimeChat](https://github.com/RenShuhuai-Andy/TimeChat)
 * [Ask-Anything](https://github.com/OpenGVLab/Ask-Anything)
 * [InternVid](https://github.com/OpenGVLab/InternVideo/tree/main/Data/InternVid)
+
+
+## Bibliography
+If you find this repository helpful for your project, please consider citing:
+```
+@misc{guo2024tracetemporalgroundingvideo,
+      title={TRACE: Temporal Grounding Video LLM via Causal Event Modeling}, 
+      author={Yongxin Guo and Jingyu Liu and Mingda Li and Xiaoying Tang and Qingbin Liu and Xi Chen},
+      year={2024},
+      eprint={2410.05643},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/2410.05643}, 
+}
+```
