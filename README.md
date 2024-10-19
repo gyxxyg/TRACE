@@ -22,7 +22,7 @@ TODO
 - [x] Release the inference and evaluation code
 - [x] Release the training and fine-tuning code
 - [x] Release the training data
-- [ ] Release the TRACE-Retrieval, which outputs timestamps of input frames instead of predict unseen timestamps.
+- [x] Release the TRACE-Retrieval, which outputs timestamps of input frames instead of predict unseen timestamps.
 - [ ] Train TRACE models on more tasks.
 
 ## Overview
