@@ -12,6 +12,7 @@
 
 ## News
 
+- 19/10/2024, 🔥 We release [trace-retrieval](https://huggingface.co/Yongxin-Guo/trace-retrieval) by forcing the predicted timestamps to be align with the input frame timestamps. Results show trace-retrieval achieve better performance on dense video captioning tasks
 - 10/10/2024, 🔥 Annotation files of training data are released!
 - 10/10/2024, 🔥 Our model checkpoints and code are released!
 
@@ -50,6 +51,7 @@ We use NPU environments for training and fine-tuning, and use V100 GPUs for eval
 | FT-Charades      | Fine-tuned on Charades-STA dataset | [trace-ft-charades](https://huggingface.co/Yongxin-Guo/trace-ft-charades) |
 | FT-Youcook2      | Fine-tuned on Youcook2 dataset | [trace-ft-youcook2](https://huggingface.co/Yongxin-Guo/trace-ft-youcook2) |
 | FT-QVHighlights   | Fine-tuned on QVHighlights dataset | [trace-ft-qvhighlights](https://huggingface.co/Yongxin-Guo/trace-ft-qvhighlights) |
+| TRACE-retrieval   | Forcing the predicted timestamps to be align with input timestamps | [trace-retrieval](https://huggingface.co/Yongxin-Guo/trace-retrieval) |
 
 ## Inference and Evaluation
 
@@ -84,22 +86,28 @@ Please config the data and model paths before running the scrips.
 | Youcook2 (Zero-Shot) | CIDER | METEOR | SODA_c | F1 |
 | --- | --- | --- | --- | --- |
 | TRACE | 8.1 | 2.8 | 2.2 | 22.4 |
+| TRACE-retrieval | 8.3 | 2.9 | 2.3 | 24.1 |
 
 | Charades-STA (Zero-Shot) | 0.3 | 0.5 | 0.7 | mIOU |
 | --- | --- | --- | --- | --- |
 | TRACE | 58.6 | 40.3 | 19.4 | 38.7 |
+| TRACE-retrieval | 57.9 | 37.4 | 17.3 | 37.4 |
 
 | QVHighlights (Zero-Shot) | mAP | Hit@1 |
 | --- | --- | --- |
-| TRACE | 26.8 | 42.7
+| TRACE | 26.8 | 42.7 |
+| TRACE-retrieval | 27.9 | 44.3 |
+
 
 | ActivityNet-DVC | CIDER | METEOR | SODA_c | F1 |
 | --- | --- | --- | --- | --- |
 | TRACE | 25.9 | 6.0 | 6.4 | 39.3 |
+| TRACE-retrieval | 25.7 | 5.9 | 6.5 | 40.1 |
 
 | ActivityNet-MR | 0.3 | 0.5 | 0.7 | mIOU |
 | --- | --- | --- | --- | --- |
-| TRACE | 53.0 | 37.7 | 24.0 | 39.0 |
+| TRACE | 54.0 | 37.7 | 24.0 | 39.0 |
+| TRACE-retrieval | 54.4 | 39.8 | 24.9 | 40.2 |
 
 ## Demo
 
