@@ -60,6 +60,16 @@ Please make sure the model and video paths are correct before running the code.
 - Inference codes are provided in [inference.py](./scripts/inference/inference.py).
 - Evaluation codes are provided in [eval.sh](./trace/eval/eval.sh)
 
+## Data
+
+We have provided the [annotation files](https://huggingface.co/datasets/Yongxin-Guo/TRACE), and the raw videos can be prepared by the following projects
+- [VTG-IT](https://github.com/gyxxyg/VTG-LLM)
+- [Video-LLaVA](https://github.com/PKU-YuanGroup/Video-LLaVA)
+- [ShareGPT4Video](https://huggingface.co/datasets/ShareGPT4Video/ShareGPT4Video)
+- [Next-QA](https://github.com/doc-doc/NExT-QA)
+- [TextVR](https://github.com/callsys/TextVR)
+- [InternVid](https://huggingface.co/datasets/OpenGVLab/InternVid-Full)
+
 ## Training
 
 Stage 1 training
