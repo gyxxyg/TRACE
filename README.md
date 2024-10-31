@@ -12,7 +12,8 @@
 
 ## News
 
-- 25/10/2024, 🔥 We evaluated the TRACE model on the MVBench benchmark and updated the evaluation code accordingly. Our findings indicate that, despite not being trained on extensive multi-task datasets, TRACE is still capable of effectively handling general QA tasks.
+- 31/10/2024, 🔥 We evaluated the TRACE nodel on [VideoMME](https://video-mme.github.io/home_page.html) benchmark and updated the evaluation code.
+- 25/10/2024, 🔥 We evaluated the TRACE model on the [MVBench](https://github.com/OpenGVLab/Ask-Anything) benchmark and updated the evaluation code accordingly. Our findings indicate that, despite not being trained on extensive multi-task datasets, TRACE is still capable of effectively handling general QA tasks.
 - 19/10/2024, 🔥 We release [trace-retrieval](https://huggingface.co/Yongxin-Guo/trace-retrieval) by forcing the predicted timestamps to be align with the input frame timestamps. Results show trace-retrieval achieve better performance on dense video captioning tasks
 - 10/10/2024, 🔥 Annotation files of training data are released!
 - 10/10/2024, 🔥 Our model checkpoints and code are released!
@@ -124,6 +125,10 @@ Please config the data and model paths before running the scrips.
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | TRACE | 48.1 | 61.2 | 56.5 | 72.5 | 46.5 | 61.0 | 48.0 | 69.5 | 40.0 | 22.0 | 31.0 | 86.5 | 37.5 | 37.0 | 51.0 | 45.0 | 40.5 | 39.0 | 31.0 | 43.5 | 44.5 |
 
+
+| VideoMME (w/t) | Short | Midium | Long | Avg |
+| --- | --- | --- | --- | --- |
+| TRACE | 49.5 | 42.5 | 39.3 | 43.8 |
 
 ## Demo
 
