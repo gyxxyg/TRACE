@@ -12,6 +12,7 @@
 
 ## News
 
+- 01/11/2024, 🔥We are excited to announce the release of [trace-uni](https://huggingface.co/Yongxin-Guo/trace-uni), which has been enhanced by incorporating additional general video understanding data from a subset of [LLaVA-Video-178k](https://huggingface.co/datasets/lmms-lab/LLaVA-Video-178K). Our results indicate that *although not adding more VTG data*, trace-uni outperforms trace in *both VTG tasks and general video understanding tasks*.
 - 31/10/2024, 🔥 We evaluated the TRACE nodel on [VideoMME](https://video-mme.github.io/home_page.html) benchmark and updated the evaluation code.
 - 25/10/2024, 🔥 We evaluated the TRACE model on the [MVBench](https://github.com/OpenGVLab/Ask-Anything) benchmark and updated the evaluation code accordingly. Our findings indicate that, *despite not being trained on extensive multi-task datasets*, TRACE is still capable of effectively handling general QA tasks.
 - 19/10/2024, 🔥 We release [trace-retrieval](https://huggingface.co/Yongxin-Guo/trace-retrieval) by forcing the predicted timestamps to be align with the input frame timestamps. Results show trace-retrieval achieve better performance on dense video captioning tasks
@@ -25,7 +26,7 @@ TODO
 - [x] Release the training and fine-tuning code
 - [x] Release the training data
 - [x] Release the TRACE-Retrieval, which outputs timestamps of input frames instead of predict unseen timestamps.
-- [ ] Train TRACE models on more tasks.
+- [x] Train TRACE models on more tasks.
 
 ## Overview
 
@@ -54,12 +55,13 @@ We use NPU environments for training and fine-tuning, and use V100 GPUs for eval
 | FT-Youcook2      | Fine-tuned on Youcook2 dataset | [trace-ft-youcook2](https://huggingface.co/Yongxin-Guo/trace-ft-youcook2) |
 | FT-QVHighlights   | Fine-tuned on QVHighlights dataset | [trace-ft-qvhighlights](https://huggingface.co/Yongxin-Guo/trace-ft-qvhighlights) |
 | TRACE-retrieval   | Forcing the predicted timestamps to be align with input timestamps | [trace-retrieval](https://huggingface.co/Yongxin-Guo/trace-retrieval) |
+| TRACE-uni | Incorporating additional general video understanding data from a subset of [LLaVA-Video-178k](https://huggingface.co/datasets/lmms-lab/LLaVA-Video-178K). | [trace-uni](https://huggingface.co/Yongxin-Guo/trace-uni) |
 
 ## Inference and Evaluation
 
 Please make sure the model and video paths are correct before running the code.
 - Inference codes are provided in [inference.py](./scripts/inference/inference.py).
-- Evaluation codes are provided in [eval.sh](./trace/eval/eval.sh)
+- Evaluation codes are provided in [trace/eval](./trace/eval/)
 
 ## Data
 
