@@ -100,12 +100,14 @@ Please config the data and model paths before running the scrips.
 | Youcook2 (Zero-Shot) | CIDER | METEOR | SODA_c | F1 |
 | --- | --- | --- | --- | --- |
 | TRACE | 8.1 | 2.8 | 2.2 | 22.4 |
-| TRACE-retrieval | 8.3 | 2.9 | 2.3 | 24.1 |
+| TRACE-retrieal | 8.3 | 2.9 | 2.3 | 24.1 |
+| TRACE-uni | 8.6 | 2.9 | 2.3 | 22.4 |
 
 | Charades-STA (Zero-Shot) | 0.3 | 0.5 | 0.7 | mIOU |
 | --- | --- | --- | --- | --- |
 | TRACE | 58.6 | 40.3 | 19.4 | 38.7 |
 | TRACE-retrieval | 57.9 | 37.4 | 17.3 | 37.4 |
+| TRACE-uni | 63.7 | 43.7 | 21.0 | 41.5 |
 
 | QVHighlights (Zero-Shot) | mAP | Hit@1 |
 | --- | --- | --- |
@@ -117,6 +119,7 @@ Please config the data and model paths before running the scrips.
 | --- | --- | --- | --- | --- |
 | TRACE | 25.9 | 6.0 | 6.4 | 39.3 |
 | TRACE-retrieval | 25.7 | 5.9 | 6.5 | 40.1 |
+| TRACE-uni | 29.2 | 6.9 | 6.4 | 40.4 |
 
 | ActivityNet-MR | 0.3 | 0.5 | 0.7 | mIOU |
 | --- | --- | --- | --- | --- |
