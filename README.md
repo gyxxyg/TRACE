@@ -113,6 +113,7 @@ Please config the data and model paths before running the scrips.
 | --- | --- | --- |
 | TRACE | 26.8 | 42.7 |
 | TRACE-retrieval | 27.9 | 44.3 |
+| TRACE-uni | 27.5 | 43.9 |
 
 
 | ActivityNet-DVC | CIDER | METEOR | SODA_c | F1 |
