@@ -109,11 +109,6 @@ Please config the data and model paths before running the scrips.
 | TRACE-retrieval | 57.9 | 37.4 | 17.3 | 37.4 |
 | TRACE-uni | 63.7 | 43.7 | 21.0 | 41.5 |
 
-| Charades-STA (FT) | 0.3 | 0.5 | 0.7 | mIOU |
-| --- | --- | --- | --- | --- |
-| TRACE | 73.3 | 61.7 | 40.5 | 53.5 |
-| TRACE-uni | 76.3 | 64.4 | 43.8 | 56.0 |
-
 | QVHighlights (Zero-Shot) | mAP | Hit@1 |
 | --- | --- | --- |
 | TRACE | 26.8 | 42.7 |
@@ -139,9 +134,10 @@ Please config the data and model paths before running the scrips.
 | TRACE-uni | 53.8 | 68.1 | 58.5 | 72.5 | 41.5 | 73.5 | 55.1 | 71.5 | 40.5 | 25.0 | 53.0 | 88.5 | 63.5 | 38.5 | 51.0 | 52.5 | 49.0 | 59.5 | 33.5 | 49.5 | 32.5 |
 
 
-| VideoMME (w/t) | Short | Midium | Long | Avg |
+| VideoMME (w/o subtitle) | Short | Midium | Long | Avg |
 | --- | --- | --- | --- | --- |
 | TRACE | 49.5 | 42.5 | 39.3 | 43.8 |
+| TRACE-uni | 58.2 | 48.1 | 42.3 | 49.6 |
 
 ## Demo
 
