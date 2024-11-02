@@ -109,6 +109,11 @@ Please config the data and model paths before running the scrips.
 | TRACE-retrieval | 57.9 | 37.4 | 17.3 | 37.4 |
 | TRACE-uni | 63.7 | 43.7 | 21.0 | 41.5 |
 
+| Charades-STA (FT) | 0.3 | 0.5 | 0.7 | mIOU |
+| --- | --- | --- | --- | --- |
+| TRACE | 73.3 | 61.7 | 40.5 | 53.5 |
+| TRACE-uni | 76.3 | 64.4 | 43.8 | 56.0 |
+
 | QVHighlights (Zero-Shot) | mAP | Hit@1 |
 | --- | --- | --- |
 | TRACE | 26.8 | 42.7 |
