@@ -12,7 +12,7 @@
 
 ## News
 
-- 01/11/2024, 🔥We are excited to announce the release of [trace-uni](https://huggingface.co/Yongxin-Guo/trace-uni), which has been enhanced by incorporating additional general video understanding data from a subset of [LLaVA-Video-178k](https://huggingface.co/datasets/lmms-lab/LLaVA-Video-178K). Our results indicate that *although not adding more VTG data*, trace-uni outperforms trace in *both VTG tasks and general video understanding tasks*.
+- 01/11/2024, 🔥We are excited to announce the release of [trace-uni](https://huggingface.co/Yongxin-Guo/trace-uni), which has been enhanced by incorporating additional general video understanding data from a subset of [LLaVA-Video-178k](https://huggingface.co/datasets/lmms-lab/LLaVA-Video-178K). Our results indicate that (1) the TRACE architecture is still capable of handling general video understanding tasks; (2) *although not adding more VTG data*, trace-uni outperforms trace in *both VTG tasks and general video understanding tasks*.
 - 31/10/2024, 🔥 We evaluated the TRACE nodel on [VideoMME](https://video-mme.github.io/home_page.html) benchmark and updated the evaluation code.
 - 25/10/2024, 🔥 We evaluated the TRACE model on the [MVBench](https://github.com/OpenGVLab/Ask-Anything) benchmark and updated the evaluation code accordingly. Our findings indicate that, *despite not being trained on extensive multi-task datasets*, TRACE is still capable of effectively handling general QA tasks.
 - 19/10/2024, 🔥 We release [trace-retrieval](https://huggingface.co/Yongxin-Guo/trace-retrieval) by forcing the predicted timestamps to be align with the input frame timestamps. Results show trace-retrieval achieve better performance on dense video captioning tasks
@@ -126,10 +126,12 @@ Please config the data and model paths before running the scrips.
 | --- | --- | --- | --- | --- |
 | TRACE | 54.0 | 37.7 | 24.0 | 39.0 |
 | TRACE-retrieval | 54.4 | 39.8 | 24.9 | 40.2 |
+| TRACE-uni | 53.2 | 38.2 | 24.7 | 39.4 |
 
 | MVBench | Avg | AS | AP | AA | FA | UA | OE | OI | OS | MD | AL | ST | AC | MC | MA | SC | FP | CO | EN | ER | CI |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | TRACE | 48.1 | 61.2 | 56.5 | 72.5 | 46.5 | 61.0 | 48.0 | 69.5 | 40.0 | 22.0 | 31.0 | 86.5 | 37.5 | 37.0 | 51.0 | 45.0 | 40.5 | 39.0 | 31.0 | 43.5 | 44.5 |
+| TRACE-uni | 53.8 | 68.1 | 58.5 | 72.5 | 41.5 | 73.5 | 55.1 | 71.5 | 40.5 | 25.0 | 53.0 | 88.5 | 63.5 | 38.5 | 51.0 | 52.5 | 49.0 | 59.5 | 33.5 | 49.5 | 32.5 |
 
 
 | VideoMME (w/t) | Short | Midium | Long | Avg |
@@ -145,8 +147,7 @@ Please config the data and model paths before running the scrips.
 </div>
 
 
-## Acknowledgement
-We are grateful for the following awesome projects:
+## AcknowledgementWe are grateful for the following awesome projects:
 * [VideoLLaMA2](https://github.com/DAMO-NLP-SG/VideoLLaMA2)
 * [VTG-LLM](https://github.com/gyxxyg/VTG-LLM)
 * [TimeChat](https://github.com/RenShuhuai-Andy/TimeChat)
