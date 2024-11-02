@@ -103,11 +103,6 @@ Please config the data and model paths before running the scrips.
 | TRACE-retrieal | 8.3 | 2.9 | 2.3 | 24.1 |
 | TRACE-uni | 8.6 | 2.9 | 2.3 | 22.4 |
 
-| Youcook2 (FT) | CIDER | METEOR | SODA_c | F1 |
-| --- | --- | --- | --- | --- |
-| TRACE | 35.5 | 7.7 | 6.7 | 31.8 |
-| TRACE-uni | 33.9 | 7.7 | 6.4 | 30.4 |
-
 | Charades-STA (Zero-Shot) | 0.3 | 0.5 | 0.7 | mIOU |
 | --- | --- | --- | --- | --- |
 | TRACE | 58.6 | 40.3 | 19.4 | 38.7 |
