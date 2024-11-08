@@ -62,6 +62,9 @@ We use NPU environments for training and fine-tuning, and use V100 GPUs for eval
 Please make sure the model and video paths are correct before running the code.
 - Inference codes are provided in [inference.py](./scripts/inference/inference.py).
 - Evaluation codes are provided in [trace/eval](./trace/eval/)
+    - Evaluation of VTG tasks: Provided in [eval/eval.sh](./trace/eval/eval.sh).
+    - Evaluation of MVBench: Provided in [eval/mvbench/eval.sh](./trace/eval/mvbench)
+    - Evaluation of VideoMME: Provided in [eval/videomme/eval.sh](./trace/eval/mvbench)
 
 ## Data
 
