@@ -1,5 +1,7 @@
 <h2 align="center"> <a href="https://arxiv.org/abs/2410.05643">TRACE: Temporal Grounding Video LLM via Casual Event Modeling</a></h2>
 
+<h3 align="center"> Yongxin Guo, Jingyu Liu, Mingda Li, Xiaoying Tang, Qingbin Liu, Xi Chen </h3>
+
 <h5 align="center"> If our project helps you, please give us a star ⭐ and cite our <a href="#bibliography">paper</a>!</h2>
 <h5 align="center">
 
@@ -151,12 +153,18 @@ Please config the data and model paths before running the scrips.
 </div>
 
 
-## AcknowledgementWe are grateful for the following awesome projects:
+## Acknowledgement
+We are grateful for the following awesome projects:
 * [VideoLLaMA2](https://github.com/DAMO-NLP-SG/VideoLLaMA2)
 * [VTG-LLM](https://github.com/gyxxyg/VTG-LLM)
 * [TimeChat](https://github.com/RenShuhuai-Andy/TimeChat)
 * [Ask-Anything](https://github.com/OpenGVLab/Ask-Anything)
 * [InternVid](https://github.com/OpenGVLab/InternVideo/tree/main/Data/InternVid)
+
+Contributors:
+* Yongxin Guo
+* Jingyu Liu
+* Mingda Li
 
 
 ## Bibliography
