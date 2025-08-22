@@ -1,15 +1,11 @@
-<h2 align="center"> <a href="https://arxiv.org/abs/2410.05643">TRACE: Temporal Grounding Video LLM via Casual Event Modeling</a></h2>
+<h2 align="center"> <a href="https://arxiv.org/abs/2508.13023">TRACE: Temporal Grounding Video LLM via Casual Event Modeling</a></h2>
 
 <h3 align="center"> Yongxin Guo, Jingyu Liu, Mingda Li, Xiaoying Tang, Qingbin Liu, Xi Chen </h3>
 
 <h5 align="center"> If our project helps you, please give us a star ⭐ and cite our <a href="#bibliography">paper</a>!</h2>
 <h5 align="center">
 
-[![hf_space](https://img.shields.io/badge/🤗-Paper%20In%20HF-red.svg)](https://huggingface.co/papers/2410.05643)
-[![trace_checkpoint](https://img.shields.io/badge/🤗-Checkpoints-9C276A.svg)](https://huggingface.co/Yongxin-Guo/trace-uni)
-[![hf_data](https://img.shields.io/badge/🤗-Datasets-9C276A.svg)](https://huggingface.co/datasets/Yongxin-Guo/TRACE)
-[![arxiv](https://img.shields.io/badge/Arxiv-2410.05643-b31b1b.svg?logo=arXiv)](https://arxiv.org/abs/2410.05643)
-[![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Fgyxxyg%2FTRACE&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=false)](https://hits.seeyoufarm.com)
+[![arxiv](https://img.shields.io/badge/Arxiv-2508.13023-b31b1b.svg?logo=arXiv)](https://arxiv.org/abs/2508.13023)
 
 
 ## News
@@ -171,13 +167,10 @@ Contributors:
 ## Bibliography
 If you find this repository helpful for your project, please consider citing:
 ```
-@misc{guo2024tracetemporalgroundingvideo,
-      title={TRACE: Temporal Grounding Video LLM via Causal Event Modeling}, 
-      author={Yongxin Guo and Jingyu Liu and Mingda Li and Xiaoying Tang and Qingbin Liu and Xi Chen},
-      year={2024},
-      eprint={2410.05643},
-      archivePrefix={arXiv},
-      primaryClass={cs.CV},
-      url={https://arxiv.org/abs/2410.05643}, 
+@article{guo2025g,
+  title={G $\^{} 2$ RPO-A: Guided Group Relative Policy Optimization with Adaptive Guidance},
+  author={Guo, Yongxin and Deng, Wenbo and Cheng, Zhenglin and Tang, Xiaoying},
+  journal={arXiv preprint arXiv:2508.13023},
+  year={2025}
 }
 ```
